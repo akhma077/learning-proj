@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContextProps } from './types';
-import { ThemeContext } from '.';
+import { LOCAL_STORAGE_THEME_KEY, ThemeContext } from '../../config';
+import { Theme, ThemeContextProps } from '../../config/theme/types';
 
 interface ITheme {
   theme: Theme | undefined;

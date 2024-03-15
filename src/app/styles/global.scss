@@ -9,5 +9,7 @@
   background: var(--bg-color);
   color: var(--primary-color);
 
+  transition: background-color 400ms;
+
   min-height: 100vh;
 }
