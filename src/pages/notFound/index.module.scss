@@ -1,0 +1,17 @@
+.root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+
+    & h3 {
+        color: var(--color);
+    }
+    &__goBack {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 8px;
+    }
+}
