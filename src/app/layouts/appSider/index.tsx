@@ -2,6 +2,7 @@ import { Layout } from 'antd';
 import { useState } from 'react';
 
 import styles from './index.module.scss';
+import { SiderMenu } from '../../../widgets';
 
 export function AppSider() {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,7 +15,7 @@ export function AppSider() {
       width={siderWidth}
       className={styles.root}
     >
-      <h3>Im sider </h3>
+      <SiderMenu />
     </Layout.Sider>
   );
 }
