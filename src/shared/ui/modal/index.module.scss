@@ -1,0 +1,82 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: var(--white-900);
+    box-shadow: -2px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.closeIcon path {
+    stroke: var(--neutral-400);
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    width: 920px;
+}
+
+.modalTitle {
+    font: var(--font-main-h2);
+}
+
+.modalSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.modalSectionColumn2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+}
+
+.modalSectionColumn3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+}
+
+.modalSectionButtons {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 32px;
+}
+
+.modalSectionTitle {
+    font: var(--font-main-h3);
+}
+
+.modalChoice {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
