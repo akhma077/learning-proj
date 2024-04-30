@@ -5,17 +5,17 @@ import styles from './index.module.scss';
 import { SiderMenu } from '../../../widgets';
 
 export function AppSider() {
-  const [isHovered, setIsHovered] = useState(false);
-  const siderWidth = isHovered ? '25%' : '10%';
+    const [isHovered, setIsHovered] = useState(false);
+    const siderWidth = isHovered ? '25%' : '5%';
 
-  return (
-    <Layout.Sider
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      width={siderWidth}
-      className={styles.root}
-    >
-      <SiderMenu />
-    </Layout.Sider>
-  );
+    return (
+        <Layout.Sider
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            width={siderWidth}
+            className={styles.root}
+        >
+            <SiderMenu />
+        </Layout.Sider>
+    );
 }

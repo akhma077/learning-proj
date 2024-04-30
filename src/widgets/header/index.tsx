@@ -1,7 +1,5 @@
-import { DingdingOutlined } from '@ant-design/icons';
-
+import { Typography } from 'antd';
 import slyles from './index.module.scss';
-import { useTheme } from '../../shared/hooks';
 
 // export function Component() {
 
@@ -19,14 +17,9 @@ import { useTheme } from '../../shared/hooks';
 // }
 
 export function Header() {
-  const { toggleTheme, theme } = useTheme();
-  return (
-    <header className={slyles.root}>
-      <DingdingOutlined
-        className={slyles.root__icon}
-        onClick={toggleTheme}
-        style={{ color: theme === 'light' ? '#000' : 'white' }}
-      />
-    </header>
-  );
+    return (
+        <header className={slyles.root}>
+            <Typography.Title level={5}> Привет, мир! </Typography.Title>
+        </header>
+    );
 }

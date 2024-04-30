@@ -1,9 +1,51 @@
 :root {
-  --font-size-m: 16px;
-  --font-line-m: 24px;
-  --font-m: var(--font-size-m) / var(--font-line-m);
+    /* colors */
+    --black-900: #000000;
+    --white-900: #ffffff;
 
-  --font-size-1: 24px;
-  --font-line-l: 32px;
-  --font-l: var(--font-size-l) / var(--font-line-l);
+    --primary-600: #1860cc;
+    --primary-500: #1b69df;
+    --primary-400: #3177df;
+    --primary-300: #4784df;
+    --primary-200: #b4cbee;
+    --primary-100: #f6f9fd;
+
+    --neutral-600: #0b0b0b;
+    --neutral-500: #191a1a;
+    --neutral-400: #5c5c5c;
+    --neutral-300: #b7b7b7;
+    --neutral-200: #dfdfdf;
+    --neutral-150: #f0f0f0;
+    --neutral-100: #f9f9f9;
+
+    --success-600: #3cb501;
+    --success-500: #52c41a;
+    --success-400: #75d446;
+    --success-300: #91e069;
+    --success-200: #caf6b4;
+    --success-100: #f2ffec;
+
+    --warning-600: #eba215;
+    --warning-500: #fbad15;
+    --warning-400: #fbbf48;
+    --warning-300: #fbd07d;
+    --warning-200: #ffe98f;
+    --warning-100: #fff8f2;
+
+    --danger-600: #d80914;
+    --danger-500: #f6222e;
+    --danger-400: #f6545d;
+    --danger-300: #ff9097;
+    --danger-200: #ffc2c6;
+    --danger-100: #fff5f5;
+
+    /* fonts */
+    --font-family-main: 'Noto Sans', sans-serif;
+
+    --font-main-h6: 400 12px / 12px var(--font-family-main);
+    --font-main-h5: 400 14px / 115% var(--font-family-main);
+    --font-main-h4: 400 16px / 16px var(--font-family-main);
+    --font-main-h3: 600 20px / 20px var(--font-family-main);
+    --font-main-h2: 600 28px / 28px var(--font-family-main);
+    --font-main-h1: 600 36px / 36px var(--font-family-main);
 }

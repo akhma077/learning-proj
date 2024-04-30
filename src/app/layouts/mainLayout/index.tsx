@@ -4,18 +4,19 @@ import { AppSider } from '../appSider';
 import { AppContent } from '../appContent';
 
 export function MainLayout() {
-  const layoutStyle = {
-    overflow: 'hidden',
-  };
+    const layoutStyle = {
+        overflow: 'hidden',
+    };
 
-  return (
-    <Layout style={layoutStyle}>
-      <AppHeader />
+    return (
+        <Layout style={layoutStyle}>
+            <AppSider />
 
-      <Layout>
-        <AppSider />
-        <AppContent />
-      </Layout>
-    </Layout>
-  );
+            <Layout>
+                <AppHeader />
+
+                <AppContent />
+            </Layout>
+        </Layout>
+    );
 }
